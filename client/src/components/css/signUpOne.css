@@ -1,0 +1,29 @@
+.sign-up-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container.signUpOne {
+    width: 45vw;
+}
+
+.form-item.signUpOne {
+    flex-direction: row;
+}
+
+.form-item.signUpOne input {
+    width: 10%;
+}
+
+.form-container h2 {
+    font-size: var(--font-lg);
+    text-transform: none;
+}
+
+.form-item.signUpOne label {
+    margin-right: var(--mg-sm);
+}
+
+.form-item.signUpOne button {
+    width: 100px;
+}

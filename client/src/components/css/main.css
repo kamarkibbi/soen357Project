@@ -56,3 +56,8 @@ body {
 main {
     height: 100vh;
 }
+
+img {
+    width: 100%;
+    object-fit: contain;
+}

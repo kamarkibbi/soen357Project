@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import '../css/main.css'
 import '../css/login.css'
+import '../css/formStyle.css'
 
 import Header from './header';
 
