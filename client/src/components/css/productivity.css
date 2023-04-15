@@ -1,0 +1,38 @@
+.p-container.productivity {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-container h2 {
+    font-size: var(--font-lg);
+    font-family: sub-bold;
+}
+
+.p-container #productivity-improvement {
+    font-size: var(--font-rg);
+    font-family: sub-reg;
+}
+
+.p-container img {
+    width: 80%;
+    margin: var(--mg-lgr);
+    margin-top: var(--mg-lgr);
+    margin-bottom: var(--mg-lgr);
+}
+
+.text-container.productivity {
+    width: 60%;
+    padding: var(--mg-lgr);
+    background-color: var(--color-5);
+    border-radius: var(--mg-lgr);
+}
+
+.tip-title.productivity {
+    font-size: var(--font-lg);
+}
+
+.tip-text.productivity {
+    margin-top: var(--mg-lg);
+    font-size: var(--font-rg);
+    line-height: 1.5em;
+}
