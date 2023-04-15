@@ -1,0 +1,92 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sign-up {
+    flex-direction: column;
+}
+
+#main-title {
+    font-size: var(--font-xl);
+    font-family: main-bold;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.form-container {
+    padding: var(--mg-lgr);
+    background: var(--color-1);
+
+    border-radius: var(--mg-lgr);
+    width: 300px;
+}
+
+.form-container h2 {
+    font-size: var(--font-lg);
+    font-family: sub-bold;
+    letter-spacing: 0.1ch;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+form {
+    max-height: 100%;
+}
+
+.form-item {
+    margin-top: var(--mg-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item label {
+    margin-bottom: var(--mg-xs);
+    font-family: sub-reg;
+    font-size: var(--font-rg);
+    align-self: baseline;
+}
+
+.form-item input {
+    font-size: var(--font-rg);
+    border-radius: var(--mg-xs);
+    border: 1px solid black;
+    align-self: baseline;
+    width: 100%;
+    padding: 0.2em;
+}
+
+.form-item input:focus {
+    border: 2px solid var(--color-2);
+    outline: none;
+}
+
+.form-item button {
+    margin-top: var(--mg-rg);
+    padding: var(--mg-rg);
+    background: black;
+    color: white;
+    border-radius: var(--mg-rg);
+    border: 1px solid black;
+    width: 80%;
+    cursor: pointer;
+    font-size: var(--font-rg);
+    font-family: sub-bold;
+}
