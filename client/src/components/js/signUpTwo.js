@@ -17,37 +17,37 @@ function SignUpTwo() {
                 <form>
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="workout" id="workout"></input>
-                        <label for="workout">Workout</label>
+                        <label htmlFor="workout">Workout</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="moving" id="moving"></input>
-                        <label for="moving">Moving</label>
+                        <label htmlFor="moving">Moving</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="rest" id="rest"></input>
-                        <label for="rest">Rest</label>
+                        <label htmlFor="rest">Rest</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="eating" id="eating"></input>
-                        <label for="eating">Eating</label>
+                        <label htmlFor="eating">Eating</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="cooking" id="cooking"></input>
-                        <label for="cooking">Cooking</label>
+                        <label htmlFor="cooking">Cooking</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="walking-pet" id="walking-pet"></input>
-                        <label for="walking-pet">Walking Pet</label>
+                        <label htmlFor="walking-pet">Walking Pet</label>
                     </div>
 
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="self-care" id="self-care"></input>
-                        <label for="self-care">Self Care</label>
+                        <label htmlFor="self-care">Self Care</label>
                     </div>
 
                     <div className="form-item">

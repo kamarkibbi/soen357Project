@@ -28,7 +28,7 @@ function Productivity() {
 
             <section className="tip-container p-container productivity">
                 <div className="text-container productivity">
-                    <h2 className="tip-title productivity">Tip of the Day</h2>
+                    <h2 className="tip-title productivity">Tip of the Day:</h2>
                     <p className="tip-text productivity">
                         Last week you spent 13 hours commuting. This could have been due to traffic. This weeks schedule
                         will suggest later commute times to avoid time wasted in traffic. study times will be scheduled in
