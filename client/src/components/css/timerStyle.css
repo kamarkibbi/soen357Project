@@ -1,0 +1,65 @@
+/* ----------------------------------------------- */
+/* Timer Container
+    - for timer.js
+*/
+
+.timer-container {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: var(--color-4);
+    border-radius: 50%;
+    padding: var(--mg-rg) var(--mg-lgr) var(--mg-rg) var(--mg-lgr);
+}
+
+/* ----------------------------------------------- */
+/* Timer Container - Title
+    - for timer.js
+*/
+.timer-container h2 {
+    font-size: var(--font-lg);
+    font-family: sub-bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* Timer Container - Title:hover
+    - for timer.js
+*/
+.timer-container:hover h2 {
+    display: block;
+}
+
+.timer-container p {
+    font-size: var(--font-rg);
+    text-align: center;
+
+    display: none
+}
+
+.timer-container:hover p {
+    display: block;
+}
+
+.time {
+    color: white;
+    font-family: sub-reg;
+    font-size: var(--font-lg);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    width: 100%;
+    justify-content: space-around;
+
+    display: none;
+}
+
+.timer-container:hover .button-container {
+    display: flex;
+}
