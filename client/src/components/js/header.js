@@ -6,9 +6,8 @@ function Header() {
           <nav>
             {/* Temp nav placeholder */}
               <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
+                  <li><a href="">Productivity</a></li>
+                  <li><a href="">Schedule</a></li>
               </ul>
           </nav>
       </header>

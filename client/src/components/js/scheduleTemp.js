@@ -4,7 +4,6 @@ import Header from './header'
 function ScheduleTemp() {
     return(
     <>
-    <Header/>
     <main>
         <section class="container">
             <div class="temp-schedule">

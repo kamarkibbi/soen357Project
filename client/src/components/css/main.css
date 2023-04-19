@@ -63,11 +63,13 @@ img {
     object-fit: contain;
 }
 
+
+/* TEMP TEMP TEMP */
 .container {
     width: 800px;
     height: 80vh;
 
-    background: grey;
+    background: lightgrey;
     display: flex;
     flex-direction: column;
 }
