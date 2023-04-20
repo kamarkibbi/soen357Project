@@ -8,7 +8,7 @@ import SchedulePage from './components/js/schedulePage';
 function App() {
 
   return (
-    <SchedulePage/>
+    <Login/>
   );
 }
 

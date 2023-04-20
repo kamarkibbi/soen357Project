@@ -2,6 +2,7 @@ import '../css/timerStyle.css'
 
 import { useState, useEffect } from 'react';
 
+//Function creates and handles a timer for user scheduled events
 function Timer() {
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
