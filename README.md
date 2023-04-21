@@ -1,6 +1,12 @@
 # soen357Project
 Instructions on how to open website:
 
+1. Clone the Github repository and open it on your favourite IDE
+2. cd to the `client` folder with your terminal and run the command `npm i`
+3. In the `client` folder, run the command `react-scripts start`
+4. cd to the `server` folder with your terminal and run the command `npm i`
+5. In the `server` folder, run the command `node app.js`
+
 
 Explanation of functionalities: (what is working and what is not working)
 
