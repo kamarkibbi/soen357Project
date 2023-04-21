@@ -1,0 +1,84 @@
+/* ----------------------------------------------- */
+/* timer container
+    - for timer.js
+*/
+.timer-container {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: var(--color-4);
+    border-radius: 50%;
+    padding: var(--mg-rg) var(--mg-lgr) var(--mg-rg) var(--mg-lgr);
+}
+
+/* ----------------------------------------------- */
+/* title
+    - for timer.js
+*/
+.timer-container h2 {
+    font-size: var(--font-lg);
+    font-family: sub-bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* title:hover
+    - for timer.js
+*/
+.timer-container:hover h2 {
+    display: block;
+}
+
+/* ----------------------------------------------- */
+/* about
+    - for timer.js
+*/
+.timer-container p {
+    font-size: var(--font-rg);
+    text-align: center;
+
+    display: none
+}
+
+/* ----------------------------------------------- */
+/* about:hover
+    - for timer.js
+*/
+.timer-container:hover p {
+    display: block;
+}
+
+/* ----------------------------------------------- */
+/* Time - displayed time
+    - for timer.js
+*/
+.time {
+    color: white;
+    font-family: sub-reg;
+    font-size: var(--font-lg);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------- */
+/* button container
+    - for timer.js
+*/
+.button-container {
+    width: 100%;
+    justify-content: space-around;
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* button container:hover
+    - for timer.js
+*/
+.timer-container:hover .button-container {
+    display: flex;
+}

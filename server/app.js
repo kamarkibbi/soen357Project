@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+var cors = require('cors')
 const mongodb = require('mongodb');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors())
 
 // Function to generate a schedule for a user based on their classes, activities, commute, sleepHours, studyHours, and wakeWindHours
 function generateSchedule(classes, activities, commute, sleepHours, studyHours, wakeWindHours) {
@@ -92,7 +94,7 @@ MongoClient.connect(url, (err, client) => {
     // Handle signup requests
     app.post('/signup', async (req, res) => {
         const { email, firstName, lastName, password } = req.body;
-
+        console.log(email)
         // Check if a user with this email already exists
         const existingUser = await usersCollection.findOne({ email });
         if (existingUser) {
@@ -114,6 +116,7 @@ MongoClient.connect(url, (err, client) => {
 
         // Return the newly created user data
         res.status(201).json({ message: 'User created', user: newUser });
+        console.log("yaayyyy")
     });
 
 
@@ -204,4 +207,8 @@ app.get('/generate_schedule', async (req, res) => {
     const schedule = generateSchedule(user.classes, user.activities, user.commute, user.sleepHours, user.studyHours, user.wakeWindHours);
 
     res.status(200).json(schedule);
+});
+
+app.listen(8000, function () {
+    console.log('Example app listening on port ' + 8000 + '!');
 });

@@ -1,0 +1,110 @@
+:root {
+    --color-1: #EFC7C7;
+    --color-2: #9D2FE1;
+    --color-3: #C271E9;
+    --color-4: #EC3060;
+    --color-5: #D1F1FF;
+
+    --font-sm: 1.2rem;
+    --font-rg: 1.6rem;
+    --font-lg: 2.6rem;
+    --font-lgr: 4.2rem;
+    --font-xl: 6.8rem;
+
+    --mg-xs: 0.3em;
+    --mg-sm: 0.5em;
+    --mg-rg: 1em;
+    --mg-lg: 2em;
+    --mg-lgr: 4em;
+    --mg-xl: 6em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: main-bold;
+    src: url(../../font/Rene\ Bieder\ -\ Mirador\ Bold\ DEMO.otf) format('truetype');
+}
+
+@font-face {
+    font-family: main-reg;
+    src: url(../../font/Rene\ Bieder\ -\ Mirador\ Book\ DEMO.otf) format('truetype');
+}
+
+@font-face {
+    font-family: sub-bold;
+    src: url(../../font/Oxygen-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: sub-reg;
+    src: url(../../font/Oxygen-Regular.ttf) format('truetype');
+}
+
+/* ------------------------------------- */
+body {
+    height: 100vh;
+}
+
+main {
+    height: 90vh;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* TEMP TEMP TEMP */
+.container {
+    width: 800px;
+    height: 80vh;
+
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.temp-schedule {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container li {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#logo h1 {
+    color: black;
+    font-size: var(--font-lg);
+    font-family: main-bold;
+    cursor: default;
+}

@@ -1,0 +1,19 @@
+.form-item.signUpTwo {
+    flex-direction: row;
+}
+
+.form-item.signUpTwo {
+    margin-top: var(--mg-xs);
+}
+
+.form-item.signUpTwo input {
+    width: 10%;
+}
+
+.form-item.signUpTwo label {
+    margin-right: var(--mg-sm);
+}
+
+.form-item.signUpTwo button {
+    width: 100px;
+}
