@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '../css/main.css'
 import '../css/signUpOne.css'
 import '../css/formStyle.css'
@@ -14,6 +16,10 @@ function SignUpOne() {
             <div className="form-container signUpOne">
                 <h2>Some questions before we begin...</h2>
                 <form>
+                    <div className="upload-schedule form-item signUpOne">
+                        <label id='schedule-label' for="schedule">Upload Schedule</label>
+                        <input type="file" name="schedule" id="schedule"></input>
+                    </div>
                     <div className="form-item signUpOne">
                         <label for="commute">How long is your commute to from home to school?</label>
                         <input type="number" name="commute" id="commute"></input>
@@ -40,7 +46,7 @@ function SignUpOne() {
                     </div>
 
                     <div className="form-item signUpOne">
-                        <button id="submit">SUBMIT</button>
+                        <button id="submit"><Link className='link' to="/signUpTwo">SUBMIT</Link></button>
                     </div>
                 </form>
             </div>

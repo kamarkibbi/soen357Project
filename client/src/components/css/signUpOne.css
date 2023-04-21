@@ -27,3 +27,12 @@
 .form-item.signUpOne button {
     width: 100px;
 }
+
+.form-item #schedule {
+    width: 105px;
+}
+
+#schedule-label {
+    text-transform: uppercase;
+    font-family: sub-bold;
+}

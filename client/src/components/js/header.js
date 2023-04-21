@@ -1,16 +1,20 @@
+import { Link } from 'react-router-dom';
+
 import '../css/header.css'
+import Logo from './logo';
 
 function Header() {
     return (
         <header>
+          <Logo/>
           <nav>
             {/* Temp nav placeholder */}
               <ul>
-                  <li><a href="">Productivity</a></li>
-                  <li><a href="">Schedule</a></li>
+                  <li><Link className="link" to='/schedulepage'>Schedule</Link></li>
+                  <li><Link className="link" to='/productivity'>Productivity</Link></li>
               </ul>
           </nav>
-      </header>
+        </header>
     );
 }
 

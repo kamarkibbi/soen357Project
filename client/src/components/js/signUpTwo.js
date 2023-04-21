@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '../css/main.css'
 import '../css/signUpOne.css'
 import '../css/signUpTwo.css'
@@ -51,7 +53,7 @@ function SignUpTwo() {
                     </div>
 
                     <div className="form-item">
-                        <button id="submit">SUBMIT</button>
+                        <button id="submit"><Link className='link' to="/schedulePage">SUBMIT</Link></button>
                     </div>
                 </form>
             </div>

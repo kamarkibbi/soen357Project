@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import React from 'react';
 import axios from 'axios';
 
@@ -52,7 +54,7 @@ function Login() {
                         <input name='email' type="text" id="email"></input>
                     </div>
                     <div className="form-item">
-                        <button id='submit'>SUBMIT</button>
+                        <button id='submit'><Link className="link" to='signUpOne'>SUBMIT</Link></button>
                     </div>
                 </form>
             </div>

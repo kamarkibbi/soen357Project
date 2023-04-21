@@ -55,7 +55,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
 }
 
 img {
@@ -86,4 +86,25 @@ img {
 .container li {
     width: 100%;
     border: 1px solid black;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#logo h1 {
+    color: black;
+    font-size: var(--font-lg);
+    font-family: main-bold;
+    cursor: default;
 }
