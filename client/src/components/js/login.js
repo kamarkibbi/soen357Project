@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 import '../css/main.css'
 import '../css/login.css'
@@ -57,7 +57,7 @@ function Login() {
                         <input name='password' type="password" id="password"></input>
                     </div>
                     <div className="form-item">
-                        <button id='submit'><Link className="link" to='signUpOne'>SUBMIT</Link></button>
+                        {/*<button id='submit'><Link className="link" to='signUpOne'>SUBMIT</Link></button>*/}
                     </div>
                 </form>
             </div>
