@@ -20,7 +20,7 @@ On the landing page, enter your email, first name, last name, and password into 
 
 This page is designed to help us understand the user and gather information about their daily schedule and preferences so that we can tailor their experience on the platform accordingly.
 
-On this page, click the "Choose File" button under the "Upload Schedule" section to upload your class schedule as a PDF. Then, enter the number values for the following fields: class start time, class end time, and break time. Once completed, click the submit button to proceed to the next page.
+On this page, enter the number values for the following fields: class start time, class end time, and break time. The upload schedule is not implemented with the backend, so there is no need to upload a .pdf at this point. Once completed, click the submit button to proceed to the next page.
 
 3. Sign-Up Page 2:
 
@@ -32,8 +32,10 @@ On this page, select the boxes of the tasks you would like to schedule explicitl
 
 After completing the sign-up process, users are directed to the daily schedule page where they can access a customized schedule of tasks tailored to their needs. This schedule is designed to help students manage their time more efficiently and effectively, enabling them to complete tasks on time and achieve their academic and personal goals.
 
-On the schedule page, scroll using the mouse wheel to view your daily tasks. You can click on each task to view more details. To navigate to the productivity page, click on the "Productivity" tab in the navigation bar.
+On the schedule page, scroll using the mouse wheel to view your daily tasks. You can click on each task to view more details. The data filled in the schedule is hard coded and not representative of the users timetable, as we were unable to link this feature to the back-end. To navigate to the productivity page, click on the "Productivity" tab in the navigation bar.
 
 5. Productivity Page:
 
 The productivity page provides users with a detailed overview of their weekly productivity, highlighting areas for improvement and offering tips to enhance their time management skills further. This feature enables students to track their progress and make informed decisions about their daily routines, ultimately improving their overall productivity and success.
+
+This page contains hard coded data to represent how the page would look in our end service.
