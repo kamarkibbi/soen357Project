@@ -1,4 +1,9 @@
 # soen357Project
+
+youtube demo:
+
+https://youtu.be/Nu4H1065Gqg
+
 Instructions on how to open website:
 
 1. Clone the Github repository and open it on your favourite IDE
