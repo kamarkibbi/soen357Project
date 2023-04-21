@@ -1,3 +1,5 @@
+import React from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 import '../css/main.css'
@@ -8,6 +10,22 @@ import Header from './header'
 import logo from '../../img/daylee-logo.png'
 
 function SignUpOne() {
+
+    const formRef = React.useRef(null);
+
+    function submitScheduleOne(e) {
+        e.preventDefault();
+
+        const formData = new FormData(formRef.current);
+
+        // Convert FormData to an object
+        const data = {};
+        formData.forEach((value, key) => data[key] = value);
+
+        //axios post user to backend
+        axios.post('/schedule', data);
+    }
+
     return(
     <>
     <Header/>
@@ -15,7 +33,7 @@ function SignUpOne() {
         <section className='sign-up-form-container'>
             <div className="form-container signUpOne">
                 <h2>Some questions before we begin...</h2>
-                <form>
+                <form ref={formRef} onSubmit={submitScheduleOne}>
                     <div className="upload-schedule form-item signUpOne">
                         <label id='schedule-label' for="schedule">Upload Schedule</label>
                         <input type="file" name="schedule" id="schedule"></input>

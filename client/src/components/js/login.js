@@ -19,16 +19,15 @@ function Login() {
 
     const formData = new FormData(formRef.current);
 
-    console.log([...formData]);
+    // Convert FormData to an object
+    const dataObj = {};
+    formData.forEach((value, key) => dataObj[key] = value);
+    formData.append('classes', ''); // Add an empty value for classes
+    formData.append('activities', ''); // Add an empty value for activities
 
-    /* axios.post('/submit', formData)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      }); */
-    }
+    //axios post user to backend
+    axios.post('/signup', dataObj);
+  }
 
   return (
     <>
@@ -42,6 +41,10 @@ function Login() {
                 <h2 className="title">Sign Up</h2>
                 <form ref={formRef} onSubmit={submitForm}>
                     <div className="form-item">
+                        <label htmlFor="email">email</label>
+                        <input name='email' type="text" id="email"></input>
+                    </div>
+                    <div className="form-item">
                         <label htmlFor="first-name">first name</label>
                         <input name='first-name' type="text" id="first-name"></input>
                     </div>
@@ -50,8 +53,8 @@ function Login() {
                         <input name='last-name' type="text" id="last-name"></input>
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">email</label>
-                        <input name='email' type="text" id="email"></input>
+                        <label htmlFor="password">password</label>
+                        <input name='password' type="password" id="password"></input>
                     </div>
                     <div className="form-item">
                         <button id='submit'><Link className="link" to='signUpOne'>SUBMIT</Link></button>

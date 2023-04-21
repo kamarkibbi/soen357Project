@@ -1,14 +1,30 @@
+import React from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-
 import '../css/main.css'
 import '../css/signUpOne.css'
 import '../css/signUpTwo.css'
 import '../css/formStyle.css'
 import Header from './header'
-
 import logo from '../../img/daylee-logo.png'
 
 function SignUpTwo() {
+
+    const formRef = React.useRef(null);
+
+    function submitScheduleTwo(e) {
+        e.preventDefault();
+
+        const formData = new FormData(formRef.current);
+
+        // Convert FormData to an object
+        const data = {};
+        formData.forEach((value, key) => data[key] = value);
+
+        //axios post user to backend
+        axios.post('/schedule', data);
+    }
+
     return(
         <>
         <Header/>
@@ -16,7 +32,7 @@ function SignUpTwo() {
         <section>
             <div className="form-container signUpTwo">
                 <h2>General tasks you would like scheduled explicitly...</h2>
-                <form>
+                <form ref={formRef} onSubmit={submitScheduleTwo}>
                     <div className="form-item signUpTwo">
                         <input type="checkbox" name="workout" id="workout"></input>
                         <label htmlFor="workout">Workout</label>
